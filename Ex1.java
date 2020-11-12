@@ -1,9 +1,9 @@
 
 
 public class Ex1 {
-	public static void main(String[] args) {
-		int a=Integer.parseInt(args[0]);
-		int b=Integer.parseInt(args[1]);
+	public static void main(int[] args) {
+		int a=args[0];
+		int b=args[1];
 		GPCD(a,b);
 	}
 	
