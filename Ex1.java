@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class Ex1 {
 	public static void main(String[] args) {
-		if(args!=null) {
+		/*if(args!=null) {
 			int a=Integer.parseInt(args[0]);
 			int b=Integer.parseInt(args[1]);
 			GPCD(a,b);
 		}
-		else {
+		else {*/
 			Scanner s=new Scanner(System.in);
 			int a=s.nextInt();
 			int b=s.nextInt();
 			GPCD(a,b);
-		}
+		
 	}
 	
 	//GCD function:
