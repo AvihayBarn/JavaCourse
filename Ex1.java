@@ -1,20 +1,18 @@
-
+package HomeQuests;
 
 import java.util.Scanner;
 
 public class Ex1 {
 	public static void main(String[] args) {
-		/*if(args!=null) {
-			int a=Integer.parseInt(args[0]);
-			int b=Integer.parseInt(args[1]);
-			GPCD(a,b);
-		}
-		else {*/
 			Scanner s=new Scanner(System.in);
+			System.out.println("Enter the first number for max prime GCD: ");
 			int a=s.nextInt();
+			System.out.println("Enter the second number for max prime GCD: ");
 			int b=s.nextInt();
 			GPCD(a,b);
 		
+		
+			
 	}
 	
 	//GCD function:
@@ -22,14 +20,16 @@ public class Ex1 {
 		int gcd;
 		if(a>b) gcd=GCD(a,b);
 		else gcd=GCD(b,a);
-		
-		if(isPrime(gcd)) System.out.println(gcd);
+		System.out.println("Computes the GPCD("+a+","+b+") =");
+		if(isPrime(gcd)) {
+			System.out.println("Max Prime Common Divider:"+gcd);
+		}
 		else {
 			int temp=0;
 			for(int i=2;i<=gcd-1;i++) {
 				if(a%i==0 && b%i==0 && isPrime(i)) temp=i;
 			}
-			System.out.println(temp);
+			System.out.println("Max Prime Common Divider:"+temp);
 		}
 	}
 	public static int GCD(int a,int b) {
