@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ex1 {
 	public static void main(String[] args) {
-		if(args[0]!=null) {
+		if(args!=null) {
 			int a=Integer.parseInt(args[0]);
 			int b=Integer.parseInt(args[1]);
 			GPCD(a,b);
