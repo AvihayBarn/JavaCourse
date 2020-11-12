@@ -4,16 +4,23 @@ import java.util.Scanner;
 
 public class Ex1 {
 	public static void main(String[] args) {
+		int a,b;
+		if(args.length>0) {
+			a=Integer.parseInt(args[0]);
+			b=Integer.parseInt(args[0]);
+		}
+		else {
 			Scanner s=new Scanner(System.in);
 			System.out.print("Enter the first number for max prime GCD: ");
-			int a=s.nextInt();
+			a=s.nextInt();
 			System.out.println();
 			System.out.print("Enter the second number for max prime GCD: ");
-			int b=s.nextInt();
+			b=s.nextInt();
 			System.out.println();
 			System.out.println("Computes the GPCD("+a+","+b+") =");
 			System.out.println();
-			GPCD(a,b);
+		}
+		GPCD(a,b);
 		
 		
 			
